@@ -1,0 +1,31 @@
+================================================================================
+EARTHQUAKE MAGNITUDE PREDICTION - COMPREHENSIVE EVALUATION REPORT
+================================================================================
+
+METRICS SUMMARY:
+--------------------------------------------------------------------------------
+                     MSE      RMSE       MAE  Median AE  R² Score  MAPE (%)  Correlation  Residuals Std
+LSTM-Inspired   0.134105  0.366204  0.268473   0.206121  0.357774  7.502035     0.598419       0.366162
+Neural Network  0.143016  0.378174  0.272203   0.203188  0.315103  7.614031     0.566555       0.378173
+Random Forest   0.139728  0.373803  0.276112   0.217622  0.330845  7.730355     0.575443       0.373798
+XGBoost         0.135943  0.368704  0.268551   0.203911  0.348973  7.495969     0.590944       0.368636
+
+MODEL RANKINGS:
+--------------------------------------------------------------------------------
+By R² Score (higher is better):
+  1. LSTM-Inspired: 0.357774
+  2. XGBoost: 0.348973
+  3. Random Forest: 0.330845
+  4. Neural Network: 0.315103
+
+By RMSE (lower is better):
+  1. LSTM-Inspired: 0.366204
+  2. XGBoost: 0.368704
+  3. Random Forest: 0.373803
+  4. Neural Network: 0.378174
+
+By MAE (lower is better):
+  1. LSTM-Inspired: 0.268473
+  2. XGBoost: 0.268551
+  3. Neural Network: 0.272203
+  4. Random Forest: 0.276112
